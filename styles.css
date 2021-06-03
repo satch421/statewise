@@ -1,0 +1,40 @@
+h1 {
+  font-family: 'Roboto', sans-serif, 300%;
+      color       :blue;
+      font-size   :300%;
+    }
+  </style>
+}
+
+
+h2 {
+  font-family: 'Roboto', sans-serif, 200%;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: blue;
+  color: white;
+  font-style: italic;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  font-family: 'Roboto', sans-serif, 75%;
+  align-items: center;
+}
+
