@@ -1,0 +1,60 @@
+header { width: 100% }
+footer { width: 100% }
+
+body {
+
+    margin:25px;
+    padding:25px;
+    border:5px;
+}
+body {
+    font: 1em/1.25 Arial, Helvetica, sans-serif;
+}
+p {
+    color: black;
+}
+a:link { color: blue; }
+a:hover {color: purple; }
+#mainphoto {
+    width     :320px;
+    background:#eee;
+    padding   :20px 20px 5px 20px;
+    border    :1px solid #888
+}
+#photo1 {
+    width     :100px;
+    padding   :20px 20px 5px 20px;
+}
+#photo2 {
+    width     :200px;
+    background:#eee;
+    padding   :20px 20px 5px 20px;
+}
+#caption {
+    font-style:italic;
+    text-align:left;
+}
+#all-four {
+    background-color: rgba{216, 191, 216, 0.5;
+    border: solid black 2px;
+    width: 200px;
+    height: 200px;
+    text-shadow: horizontal-offset vertical-offset blur-radius color;
+    box-shadow: horizontal-offset vertical-offset blur-radius color;
+    border-top-left-radius: 25px;
+    -moz-border-top-left-radius: 25px;
+    -webkit-border-top-left-radius: 25px;
+    border-top-right-radius: 65px 65px;
+    -moz-border-top-right-radius: 65px 65px;
+    -webkit-border-top-right-radius: 65px 65px;
+    border-bottom-left-radius: 100px 50px;
+    -moz-border-bottom-left-radius: 100px 50px;
+    -webkit-border-bottom-left-radius: 100px 50px;
+    border-bottom-right-radius: 135px 25px;
+    -moz-border-bottom-right-radius: 135px 25px;
+    -webkit-border-bottom-right-radius: 135px 25px;
+}
+p#footer {
+    font: 1em/0.25 Arial, Helvetica, sans-serif;
+    text-align:center;
+}
