@@ -1,34 +1,71 @@
-{% extends "base_generic.html" %}
+<!doctype html>
+<head>
+   {% load static %}
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-{%block content %}
-  <h1>The Three Domain Architeceture</h1>
-	<p>Welcome to The Management and Public Interface for <em>Our Partnership Project</em>!</p>
-	<h3>Dynamic content</h3>
-	<p>Here is a summary of our Cloud Upload project thus far:</p>
-	<u1>
-		<li><strong>Total Records in the Cloud:</strong> {{ num_instances }}</li>
-    <li><strong>Total Patients Represented:</strong> {{ num_patients }}</li>
-		<li><strong>Hospitals represented with patient data in the Cloud:</strong> {{ num_hospitals }}</li>
-    <li><strong>Total Partners connected to our Cloud data:</strong> {{ num_partners }}</li>
-	</u1>
+    <title>Three Domain Home</title>
+    <script>
+        function hello() {
+            alert("If you haven't received an invitation to visit this site, you must leave now.");
+        }
+    </script>
+</head>
 
-  <u2>
-	  <p><label for="inp02">Are you ready to visit the 3 Domain Architecture?
-		<select name="work" id="inp02">
-		<option value="0">-- Please Select --</option>
-		<option value="1">Yes</option>
-		<option value="2">No</option>
-		<option value="3">Not sure</option>
-		</p>
 
-	</u2>
+<figure>
+<img src= href="{% static 'portal/images/ewise.png' %}">
+</figure>
 
-	<u3>
-		<input type="submit" onclick="location.href='home.html'; return false;" value="Submit"/>;
-		{% csrf_token %}
-	</u3>
+<u1 id="nav">
+    <a href="">Home</a>
+    <a href="pat_login.html">  Patient Portal</a>
+	<a href="assoc_tk.html">  Associate Toolbox</a>
+	<a href="phealth.html">  Partner Health</a>
+	<a href="ppayor.html">  Partner Payor</a>
+	<a href="pvend.html">  Partner Vendor</a>
+	<a href="about.html">  About the Architecture</a>
 
-{% endblock %}
+<h1>        </h1>
+
+<body>
+    <h1>The Three Domain Architecture</h1>
+<style>
+ht {
+    background-color: #c16f5b;
+    color: #000;
+}
+</style>
+<a href="#" onclick="hello();">Warning!</a>
+<noscript>
+<p>Hello World
+<p>This text is not written with JavaScript.
+</noscript>
+
+<section>
+
+</section>
+
+<section>
+    <u2>Welcome to the Three Domain Architecture.</u2>
+</section>
+
+<section>
+    <u2>Please select your activity focus from the menu above.</u2>
+</section>
+
+<section>
+
+</section>
+
+<div id='photo1'>
+
+     <img src= href="{% static 'portal/images/arch.png' %}">
+	
+</div>
+
+<h2>            </h2>
+
+<h2>            </h2>
 
 <footer>
 © 2021 eWISE LLC
