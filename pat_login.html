@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+<head>
+   {% load static %}
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">	
+   <title>Health Partner</title> 
+</head>
+
+<figure>
+<img src= href="{% static 'portal/images/ewise.png' %}">
+</figure>
+
+<u1 id="nav">
+    <a href="home.html">Home</a>
+    <a href="pat_login.html">  Patient Portal</a>
+	<a href="assoc_tk.html">  Associate Toolbox</a>
+	<a href="phealth.html">  Partner Health</a>
+	<a href="ppayor.html">  Partner Payor</a>
+	<a href="about.html">  About the Portal</a>
+
+<h1>        </h1>
+
+<section>
+    Login <input type=email>
+    Password <input type=search>
+</section>
+
+<h1>Our Patient Portal</h1>
+
+
+<body>
+    <section id="Login qualifier">
+	    <p><label for="inp02">Which task brings you to our partner site today?
+		<select name="work" id="inp02">
+		<option value="0">-- Please Select --</option>
+		<option value="1">Schedule an appointment.</option>
+		<option value="2">View/request health record data.</option>
+		<option value="3">Provide follow-up information to my physician/health team.</option>
+		<option value="4">Refer a friend or colleague.</option>
+		</p>
+		
+	</section>
+	
+<h2>            </h2>
+	
+
+<input type="submit" onclick="location.href='pat_login.html'; return false;" value="Submit"/>
+<input type="submit" onclick value="1" location.href='scheduler.html'; return false;" value="Submit"/>
+<input type="submit" onclick value="2" location.href='recordinst_list.html'; return false;" value="Submit"/>
+<input type="submit" onclick value="3" location.href='recordinst_form.html'; return false;" value="Submit"/>
+<input type="submit" onclick value="4" location.href='patient_form.html'; return false;" value="Submit"/>
+
+{% csrf_token %}
+
+<div id='photo1'>
+
+     <img src= href="{% static 'portal/images/logo.png' %}">
+	
+</div>
+
+<h2>            </h2>
+
+<h2>            </h2>
+
+<footer>
+© 2021 eWISE LLC
+</footer>
