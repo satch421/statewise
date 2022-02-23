@@ -1,55 +1,34 @@
-<!doctype html>
+{% extends "base_generic.html" %}
 
-<style>
-    @import url('scriptcss3.css');
-</style>
+{%block content %}
+  <h1>The Three Domain Architeceture</h1>
+	<p>Welcome to The Management and Public Interface for <em>Our Partnership Project</em>!</p>
+	<h3>Dynamic content</h3>
+	<p>Here is a summary of our Cloud Upload project thus far:</p>
+	<u1>
+		<li><strong>Total Records in the Cloud:</strong> {{ num_instances }}</li>
+    <li><strong>Total Patients Represented:</strong> {{ num_patients }}</li>
+		<li><strong>Hospitals represented with patient data in the Cloud:</strong> {{ num_hospitals }}</li>
+    <li><strong>Total Partners connected to our Cloud data:</strong> {{ num_partners }}</li>
+	</u1>
 
-<html>
-<head>
-   <title>The Three Domain Architecture</title> 
-</head>
-
-<figure>
-<img src="ewise.png">  
-</figure>
-
-
-
-<h1>        </h1>
-
-<section>
-    Login <input type=email>
-    Password <input type=search>
-</section>
-
-<h1>The Associate Toolbox</h1>
-
-
-<body>
-    <section id="Login qualifier">
-	    <p><label for="inp02">Are you ready to visit the 3 Domain Architecture?
+  <u2>
+	  <p><label for="inp02">Are you ready to visit the 3 Domain Architecture?
 		<select name="work" id="inp02">
 		<option value="0">-- Please Select --</option>
 		<option value="1">Yes</option>
 		<option value="2">No</option>
 		<option value="3">Not sure</option>
 		</p>
-		
-	</section>
-	
-<h2>            </h2>
-	
-<input type="submit" onclick="location.href='3dhome.html'; return false;" value="Submit"/>
 
-<div id='photo1'>
+	</u2>
 
-    <img src='logo.png'>
-	
-</div>
+	<u3>
+		<input type="submit" onclick="location.href='home.html'; return false;" value="Submit"/>;
+		{% csrf_token %}
+	</u3>
 
-<h2>            </h2>
-
-<h2>            </h2>
+{% endblock %}
 
 <footer>
 © 2021 eWISE LLC
