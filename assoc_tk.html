@@ -36,7 +36,7 @@
 <body>
     <section id="Login qualifier">
 	    <p><label for="inp02">Which task brings you to the Associate Toolbox today?
-		<select name="work" id="inp02">
+		<select name="work" id="inp03">
 		<option value="0">-- Please Select --</option>
 		<option value="1">Upload patient data</option>
 		<option value="2">Access patient data</option>
@@ -50,10 +50,10 @@
 	
 <h2>            </h2>
 	    
-        if inp02=1, 2, 3:
+        if inp03="1", "2", "3":
             <input type="submit" onclick="location.href='assoc_check_wtext.html'; return false;" value="Submit"/>
-        elif inp02=5, 6:
-	    <input type="submit" onclick="location.href='assoc_check_wtext.html'; return false;" value="Submit"/>
+        elif inp03="5", "6":
+	    <input type="submit" onclick="location.href='assoc_tk2.html'; return false;" value="Submit"/>
 	else:
 	    <input type="submit" onclick="location.href='pat_err.html'; return false;" value="Submit"/>
 	    
