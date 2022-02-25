@@ -11,7 +11,7 @@
 
 
 <u1 id="nav">
-    <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
 	<a href="pat_login.html">  Patient Portal</a>
 	<a href="">  Associate Toolbox</a>
 	<a href="phealth.html">  Partner Health</a>
@@ -35,24 +35,7 @@
 
 <h2>            </h2>
 	
-<script>
-	var callAPI = (firstName,lastName)=>{
-            fetch("https://6mf51nqbji.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
-            .then(response => response.text())
-            .then(result => alert(JSON.parse(result).body))
-            .catch(error => console.log('error', error));
-        }
-</script>
-<body>
-    <form>
-        <label>First Name :</label>
-        <input type="text" id="fName">
-        <label>Last Name :</label>
-        <input type="text" id="lName">
-        <!-- set button onClick method to call function we defined passing input values as parameters -->
-        <button type="button" onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value)">Call API</button>
-    </form>
-</body>
+
 
 
 <h2>            </h2>
